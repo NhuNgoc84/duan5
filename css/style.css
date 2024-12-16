@@ -12,3 +12,7 @@ h1 {
     /* căn giữa chữ */
     text-align: center;
 }
+
+h3 {
+    opacity: 50%;
+}
