@@ -14,5 +14,7 @@ h1 {
 }
 
 h3 {
+    /* trong suốt với các phần tử khác kể cả nền  */
     opacity: 50%;
+    background-color: blue;
 }
