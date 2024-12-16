@@ -5,31 +5,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>dư án 6</title>
+
+    <style>
+        .tableStyle {
+            border: none;
+            width: 100%;
+        }
+
+        .tableStyle th {
+            background-color: #cad8fa;
+            padding: 5px;
+        }
+
+        .tableStyle td {
+            background-color: #f0e7da;
+            padding: 5px;
+        }
+    </style>
 </head>
 
 <body>
     <h1>bài sử dụng các thẻ tr, th, td </h1>
-    <table>
+    <h2>sử dụng gộp cột colspan, hàng rowspan</h2>
+    <table class="tableStyle">
         <thead>
             <tr>
                 <th>tên sản phẩm </th>
+                <th colspan="2">mô tả</th>
                 <th>giá trị</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td>bánh</td>
-                <td>30.000</td>
-            </tr>
+                <td rowspan="2">bánh</td>
+                <td>kích thước</td>
+                <td>s,m,l</td>
+                <td rowspan="2">30.000</td>
             <tr>
-                <td>kẹo</td>
+                <td>loại</td>
+                <td>cứng, mềm</td>
+            </tr>
+            </tr>
+
+            <tr>
+                <td rowspan="2">kẹo</td>
+                <td colspan="2">vị: &nbsp;&nbsp; chua, ngọt</td>
                 <td>20.000</td>
             </tr>
         </tbody>
         <tfoot>
             <tr>
                 <th>tổng cộng</th>
-                <td>50.000</td>
+                <td colspan="3">50.000</td>
             </tr>
         </tfoot>
     </table>
