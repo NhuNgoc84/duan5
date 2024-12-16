@@ -1,67 +1,26 @@
-h1 {
-    /* màu chữ */
-    color: blueviolet;
-    /* font chữ  */
-    font-family: Arial, Helvetica, sans-serif;
-    /* cỡ chữ */
-    font-size: 25px;
-    /* kiểu chữ */
+p {
+    color: brown;
+}
+
+/* id  */
+#line2 {
+    color: burlywood;
+}
+
+/* class */
+.line-n {
+    color: blue;
+}
+
+.demo1 {
+    font-size: 20px;
+}
+
+.demo2 {
     font-style: italic;
-    /* hoa thường => viết hoa đầu*/
-    text-transform: capitalize;
-    /* căn giữa chữ */
-    text-align: center;
 }
 
-h3 {
-    color: aliceblue;
-    background-color: blue;
-    /* trong suốt với các phần tử khác kể cả nền , nhưng nếu trong suots thì vẫn chiếm không gian */
-    /* opacity: 50%; */
-    /* mất không gian chứa, mất phần tử trên giao diện */
-    /* display: none; */
-
-    /*ẩn hiện phần tử;có không gian chứa; khác opacity là không tương tác được */
-    /* visibility: hidden; */
-
-    /* không cho bôi đen (chọn) văn bản */
-    user-select: none;
-}
-
-/* viết lại bằng prefix */
-h3 {
-    color: aliceblue;
-    background-color: purple;
-    /* trong suốt với các phần tử khác kể cả nền , nhưng nếu trong suots thì vẫn chiếm không gian */
-    /* opacity: 50%; */
-    /* mất không gian chứa, mất phần tử trên giao diện */
-    /* display: none; */
-
-    /*ẩn hiện phần tử;có không gian chứa; khác opacity là không tương tác được */
-    /* visibility: hidden; */
-
-    /* không cho bôi đen (chọn) văn bản */
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-}
-
-/* làm animatoins */
-img {
-    transition: 1.5s;
-}
-
-/* nếu input được checked thì chon các img đồng cấp, liền sau  */
-input:checked~img {
-    /* 1. biến mấy khỏi giao diện */
-    /* display: none; */
-    /* 2. biến khỏi giao diện , nhưng vẫn chiếm vị trí */
-    /* visibility: hidden; */
-    /* 3. giao diện mờ đi, đối tượng vẫn tương tác được */
-    /* opacity: 0; */
-    /* 4. giao diện mờ đi, không tương tác được, có dùng animation */
-    opacity: 0;
-    visibility: hidden;
-
+.item_ul {
+    /* bỏ dấu chấm của list ul  */
+    list-style: none;
 }
