@@ -14,14 +14,37 @@ h1 {
 }
 
 h3 {
+    color: aliceblue;
+    background-color: blue;
     /* trong suốt với các phần tử khác kể cả nền , nhưng nếu trong suots thì vẫn chiếm không gian */
     /* opacity: 50%; */
     /* mất không gian chứa, mất phần tử trên giao diện */
     /* display: none; */
 
     /*ẩn hiện phần tử;có không gian chứa; khác opacity là không tương tác được */
-    visibility: hidden;
-    background-color: blue;
+    /* visibility: hidden; */
+
+    /* không cho bôi đen (chọn) văn bản */
+    user-select: none;
+}
+
+/* viết lại bằng prefix */
+h3 {
+    color: aliceblue;
+    background-color: purple;
+    /* trong suốt với các phần tử khác kể cả nền , nhưng nếu trong suots thì vẫn chiếm không gian */
+    /* opacity: 50%; */
+    /* mất không gian chứa, mất phần tử trên giao diện */
+    /* display: none; */
+
+    /*ẩn hiện phần tử;có không gian chứa; khác opacity là không tương tác được */
+    /* visibility: hidden; */
+
+    /* không cho bôi đen (chọn) văn bản */
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 /* làm animatoins */
