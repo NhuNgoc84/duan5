@@ -17,6 +17,9 @@ h3 {
     /* trong suốt với các phần tử khác kể cả nền , nhưng nếu trong suots thì vẫn chiếm không gian */
     /* opacity: 50%; */
     /* mất không gian chứa, mất phần tử trên giao diện */
-    display: none;
+    /* display: none; */
+
+    /*ẩn hiện phần tử;có không gian chứa; khác opacity là không tương tác được */
+    visibility: hidden;
     background-color: blue;
 }
