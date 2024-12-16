@@ -1,26 +1,7 @@
-p {
-    color: brown;
+* {
+    color: #3732c2;
 }
 
-/* id  */
-#line2 {
-    color: burlywood;
-}
-
-/* class */
-.line-n {
-    color: blue;
-}
-
-.demo1 {
-    font-size: 20px;
-}
-
-.demo2 {
-    font-style: italic;
-}
-
-.item_ul {
-    /* bỏ dấu chấm của list ul  */
-    list-style: none;
+h2.demo1 {
+    color: red;
 }
