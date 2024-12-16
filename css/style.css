@@ -23,3 +23,22 @@ h3 {
     visibility: hidden;
     background-color: blue;
 }
+
+/* làm animatoins */
+img {
+    transition: 1.5s;
+}
+
+/* nếu input được checked thì chon các img đồng cấp, liền sau  */
+input:checked~img {
+    /* 1. biến mấy khỏi giao diện */
+    /* display: none; */
+    /* 2. biến khỏi giao diện , nhưng vẫn chiếm vị trí */
+    /* visibility: hidden; */
+    /* 3. giao diện mờ đi, đối tượng vẫn tương tác được */
+    /* opacity: 0; */
+    /* 4. giao diện mờ đi, không tương tác được, có dùng animation */
+    opacity: 0;
+    visibility: hidden;
+
+}
