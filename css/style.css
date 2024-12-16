@@ -14,7 +14,9 @@ h1 {
 }
 
 h3 {
-    /* trong suốt với các phần tử khác kể cả nền  */
-    opacity: 50%;
+    /* trong suốt với các phần tử khác kể cả nền , nhưng nếu trong suots thì vẫn chiếm không gian */
+    /* opacity: 50%; */
+    /* mất không gian chứa, mất phần tử trên giao diện */
+    display: none;
     background-color: blue;
 }
