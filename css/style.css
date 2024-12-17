@@ -2,6 +2,8 @@
     color: #3732c2;
 }
 
-h2.demo1 {
+
+.demo1.demo2,
+#item1 {
     color: red;
 }
