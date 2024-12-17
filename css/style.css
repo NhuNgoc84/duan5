@@ -1,9 +1,13 @@
-* {
-    color: #3732c2;
+/* tác động tất cả thẻ p trong div  */
+div p {
+    color: rgb(41, 186, 137);
 }
 
+/* ảnh hưởng con trực tiếp */
+div>p {
+    color: rgb(149, 86, 10);
+}
 
-.demo1.demo2,
-#item1 {
-    color: red;
+.loichuc p {
+    font-size: 18px;
 }
