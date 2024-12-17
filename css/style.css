@@ -1,24 +1,47 @@
-/* lấy những title có giá trị đúng "pic" thì áp dụng   */
-[title~="pic"] {
-    /* color: pink; */
+#line2:hover {
+    color: rgb(188, 132, 27);
 }
 
-/* lấy những title có giá trị miễn có "pic" thì áp dụng   */
-[title*="pic"] {
-    /* color: cornflowerblue; */
+/* 1. tác dụng lên selector khi di chuột qua
+ re chuột đến sẽ xuất hiện thay đổi */
+.title:hover {
+    color: rgb(188, 132, 27);
+    font-size: 15px;
 }
 
-/* lấy những title có giá trị bắt đầu bằng "pic" thì áp dụng ，nếu có thêm từ thì phải nối nhau = - vd: pic, pic-4  */
-[title|="pic"] {
-    /* color: palegoldenrod; */
+/* 2. tác dụng lên selector khi nhấn giữ chuột 
+ click giữ sẽ xuất hiện thay đổi */
+.title:active {
+    color: rgb(57, 27, 188);
+    font-size: 20px;
 }
 
-/* lấy những title có giá trị bắt đầu, miễn có bằng "pic" thì áp dụng, không quan tâm giá trị nối, giá trị phía sau*/
-[title^="pic"] {
-    /* color: olive; */
+/* 3. tác dụng lên selector khi chưa click vào truy cập
+ link chưa click vào */
+.clickme:link {
+    color: brown;
 }
 
-/* lấy những title có giá trị kí tự kết thúc bằng "c" thì áp dụng, không quan tâm giá trị nối, giá trị phía sau*/
-[title$="c"] {
-    color: lightcoral;
+/* 1. tác dụng lên selector khi đã click vào truy cập
+ link đã click */
+.clickme:visited {
+    color: rgb(42, 165, 56);
+}
+
+/* khi div trống thì thực hiện thẻ này */
+.div_elm:empty {
+    width: 200px;
+    height: 200px;
+    background-color: burlywood;
+}
+
+.div_elm {
+    width: 200px;
+    height: 200px;
+    background-color: moccasin;
+}
+
+/* bấm vào link a sẽ thay đổi tương ứng   */
+h2:target {
+    color: darkmagenta;
 }
