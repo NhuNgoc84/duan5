@@ -1,8 +1,24 @@
-/* tác động lên các thẻ có thuộc tính là href */
-p[href] {
-    color: tomato;
+/* lấy những title có giá trị đúng "pic" thì áp dụng   */
+[title~="pic"] {
+    /* color: pink; */
 }
 
-[target="_blank"] {
-    color: pink;
+/* lấy những title có giá trị miễn có "pic" thì áp dụng   */
+[title*="pic"] {
+    /* color: cornflowerblue; */
+}
+
+/* lấy những title có giá trị bắt đầu bằng "pic" thì áp dụng ，nếu có thêm từ thì phải nối nhau = - vd: pic, pic-4  */
+[title|="pic"] {
+    /* color: palegoldenrod; */
+}
+
+/* lấy những title có giá trị bắt đầu, miễn có bằng "pic" thì áp dụng, không quan tâm giá trị nối, giá trị phía sau*/
+[title^="pic"] {
+    /* color: olive; */
+}
+
+/* lấy những title có giá trị kí tự kết thúc bằng "c" thì áp dụng, không quan tâm giá trị nối, giá trị phía sau*/
+[title$="c"] {
+    color: lightcoral;
 }
