@@ -15,76 +15,30 @@
     <a href="/contact.html">contact</a>
     <hr>
     <h1>bài sử dụng pseudo-classes</h1>
-    <h2>:hover :active :link :visited :empty :target</h2>
+    <h2>:first-child :last-child :nth-child(n) :nth-last-child(n) :only-child</h2>
 
-    <p>xin chào</p>
-    <p id="line2">sử dụng :hover</p>
-
-    <p class="title">nội dung 1 ....</p>
-    <p class="title">nội dung 2 ....</p>
-    <p class="title">nội dung 3 ....</p>
-
-    <a href="/about.html" class="clickme">đi dến about.html</a>
-
-    <div class="div_elm">abc</div>
-    <h1>nỗ lực phi thường</h1>
-    <!-- ul>li*3>a{chuyển đến} -->
-    <ul>
-        <li>
-            <a href="#mobai">chuyển đến mở bài</a>
-        </li>
-        <li>
-            <a href="#thanbai">chuyển đến thân bài</a>
-        </li>
-        <li>
-            <a href="#ketbai">chuyển đến kết bài</a>
-        </li>
-    </ul>
-    <!-- h2#mobai{mở bài}  -->
-    <h2 id="mobai">mở bài</h2>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In amet doloribus rerum. Quisquam rem, nesciunt sunt ut
-        deleniti repellendus aut, eius dolorum nam, nisi earum quasi numquam sapiente? Inventore, sed.
-        Corrupti iusto optio, recusandae consectetur maiores, laborum voluptate qui dicta dolorum vitae illo at
-        architecto blanditiis nemo libero magni nesciunt doloremque deserunt dolor reprehenderit incidunt quam ratione?
-        Dicta, deleniti modi.
-        Accusantium quae rerum saepe reiciendis earum nesciunt ratione quod sapiente sunt magnam vitae incidunt
-        provident quidem expedita, accusamus impedit! Vero repudiandae eius repellendus necessitatibus modi consectetur.
-        Amet distinctio iure at?
-        Quam laudantium ad provident ipsam ut nam pariatur numquam eaque repudiandae excepturi, delectus quaerat et
-        blanditiis? Perspiciatis similique pariatur ducimus dicta rem, labore reiciendis delectus magni in, quo eius
-        sit.</p>
-    <h2 id="thanbai">thân bài</h2>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In amet doloribus rerum. Quisquam rem, nesciunt sunt ut
-        deleniti repellendus aut, eius dolorum nam, nisi earum quasi numquam sapiente? Inventore, sed.
-        Corrupti iusto optio, recusandae consectetur maiores, laborum voluptate qui dicta dolorum vitae illo at
-        architecto blanditiis nemo libero magni nesciunt doloremque deserunt dolor reprehenderit incidunt quam ratione?
-        Dicta, deleniti modi.
-        Accusantium quae rerum saepe reiciendis earum nesciunt ratione quod sapiente sunt magnam vitae incidunt
-        provident quidem expedita, accusamus impedit! Vero repudiandae eius repellendus necessitatibus modi consectetur.
-        Amet distinctio iure at?
-        Quam laudantium ad provident ipsam ut nam pariatur numquam eaque repudiandae excepturi, delectus quaerat et
-        blanditiis? Perspiciatis similique pariatur ducimus dicta rem, labore reiciendis delectus magni in, quo eius
-        sit.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, adipisci. Est accusamus mollitia quibusdam
-        similique totam inventore quidem minus cumque, assumenda excepturi animi nam nihil iure eos unde veniam aliquam?
-        Id illum tenetur perferendis molestiae veritatis quos corrupti nulla similique reprehenderit vel, consequatur
-        atque praesentium quaerat, minima aspernatur. Impedit aut ducimus voluptates? Dignissimos totam earum impedit,
-        reprehenderit aliquid eum nihil.
-        Nemo voluptatibus sunt fugiat similique quisquam quis expedita? Nesciunt possimus, corrupti iusto porro
-        suscipit, distinctio quasi repellat sunt voluptas accusantium expedita eligendi ea eaque ducimus cupiditate
-        error. Doloremque, quam doloribus!</p>
-    <h2 id="ketbai">kết bài</h2>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In amet doloribus rerum. Quisquam rem, nesciunt sunt ut
-        deleniti repellendus aut, eius dolorum nam, nisi earum quasi numquam sapiente? Inventore, sed.
-        Corrupti iusto optio, recusandae consectetur maiores, laborum voluptate qui dicta dolorum vitae illo at
-        architecto blanditiis nemo libero magni nesciunt doloremque deserunt dolor reprehenderit incidunt quam ratione?
-        Dicta, deleniti modi.
-        Accusantium quae rerum saepe reiciendis earum nesciunt ratione quod sapiente sunt magnam vitae incidunt
-        provident quidem expedita, accusamus impedit! Vero repudiandae eius repellendus necessitatibus modi consectetur.
-        Amet distinctio iure at?
-        Quam laudantium ad provident ipsam ut nam pariatur numquam eaque repudiandae excepturi, delectus quaerat et
-        blanditiis? Perspiciatis similique pariatur ducimus dicta rem, labore reiciendis delectus magni in, quo eius
-        sit.</p>
+    <div>
+        <h3>phần tử 1</h3>
+        <p>đoạn 1</p>
+        <p>đoạn 2</p>
+        <p>đoạn 3</p>
+    </div>
+    <hr>
+    <div class="demo">
+        <p>nội dung 1</p>
+        <p>nội dung 2</p>
+        <p>nội dung 3</p>
+        <p>nội dung 4</p>
+    </div>
+    <!-- thẻ con duy nhất áp dụng only-child -->
+    <div>
+        <p>con duy nhất</p>
+    </div>
+    <!-- only-child không hợp lệ -->
+    <div>
+        <p>sai</p>
+        <h2>sai sai</h2>
+    </div>
 </body>
 
 </html>

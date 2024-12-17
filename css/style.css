@@ -1,47 +1,37 @@
-#line2:hover {
-    color: rgb(188, 132, 27);
-}
+/* tính từ thẻ bao div  */
+/* là phần tử đầu tiên, nếu chèn them h1 or .. thì p không còn là phần tử đầu tiên */
+/* p:first-child {
+    color: red;
+    font-size: 18px;
+} */
 
-/* 1. tác dụng lên selector khi di chuột qua
- re chuột đến sẽ xuất hiện thay đổi */
-.title:hover {
-    color: rgb(188, 132, 27);
-    font-size: 15px;
-}
-
-/* 2. tác dụng lên selector khi nhấn giữ chuột 
- click giữ sẽ xuất hiện thay đổi */
-.title:active {
-    color: rgb(57, 27, 188);
+/* là phần tử cuối */
+/* p:last-child {
+    color: violet;
     font-size: 20px;
+} */
+
+
+/* 
+:nth-child() : tính từ trên xuống, bđ =1
+:nth-last-child() : tính từ dưới lên  
+*/
+/* tại :nth-child() có thể sử dụng odd (lẻ), even(chẵn), 2n+1,... */
+/* p:nth-child(2) {
+    color: aqua;
+} */
+
+/*  (3n+1)
+n=0 ->1
+n=1 ->4
+n=2 ->7
+*/
+p:nth-last-child(even) {
+    color: lightcoral;
+    font-size: 24px;
 }
 
-/* 3. tác dụng lên selector khi chưa click vào truy cập
- link chưa click vào */
-.clickme:link {
-    color: brown;
-}
-
-/* 1. tác dụng lên selector khi đã click vào truy cập
- link đã click */
-.clickme:visited {
-    color: rgb(42, 165, 56);
-}
-
-/* khi div trống thì thực hiện thẻ này */
-.div_elm:empty {
-    width: 200px;
-    height: 200px;
-    background-color: burlywood;
-}
-
-.div_elm {
-    width: 200px;
-    height: 200px;
-    background-color: moccasin;
-}
-
-/* bấm vào link a sẽ thay đổi tương ứng   */
-h2:target {
-    color: darkmagenta;
+/* thẻ con duy nhất trong div, chỉ 1 con  */
+p:only-child {
+    color: green;
 }
