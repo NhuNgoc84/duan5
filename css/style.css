@@ -1,13 +1,9 @@
-/* tác động tất cả thẻ p trong div  */
-div p {
-    color: rgb(41, 186, 137);
+/* cùng cấp */
+/* tác động h2, có ý nghĩ là h2 liền kề sát ngay sau h1  */
+h1+h2 {
+    color: blueviolet;
 }
 
-/* ảnh hưởng con trực tiếp */
-div>p {
-    color: rgb(149, 86, 10);
-}
-
-.loichuc p {
-    font-size: 18px;
+.demo+h3 {
+    color: yellowgreen;
 }
