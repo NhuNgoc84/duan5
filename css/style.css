@@ -1,10 +1,8 @@
-/* cùng cấp */
-/* tác động lên các h3, ý nghĩ cứ đứng sau h1 là được */
-h1~h3 {
-    color: crimson;
+/* tác động lên các thẻ có thuộc tính là href */
+p[href] {
+    color: tomato;
 }
 
-/* tác động lên các div đằng sau 1 khối div đầu tiên */
-div~div {
-    color: violet;
+[target="_blank"] {
+    color: pink;
 }
